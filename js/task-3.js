@@ -6,19 +6,10 @@
 
 
 const sortByDescendingFriendCount = (users) => {
-    users.toSorted(a, b) => {
-    return a.friends.localeCompare(b.friends);
-
-    }
-
-}
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
+};
 
 
-
-const getUsersWithFriend = (users, friendName) => {
-    const result = users.filter(user => user.friends.includes(friendName));
-    return result;
-}   
 
 
 console.log(
