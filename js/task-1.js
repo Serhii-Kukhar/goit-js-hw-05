@@ -4,13 +4,17 @@
 
 
 
-const getUserNames = (users) => {
-    const names = users.map(user => {
-        return user.name;
-    });
-    return names;
+// const getUserNames = (users) => {
+//     const names = users.map(user => {
+//         return user.name;
+//     });
+//     return names;
 
-}
+// }
+
+const getUserNames = (users) => {
+    return users.map(user => user.name);
+};
 
 
 
