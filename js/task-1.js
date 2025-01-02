@@ -3,15 +3,6 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
 
 
-
-// const getUserNames = (users) => {
-//     const names = users.map(user => {
-//         return user.name;
-//     });
-//     return names;
-
-// }
-
 const getUserNames = (users) => {
     return users.map(user => user.name);
 };

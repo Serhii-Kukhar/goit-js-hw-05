@@ -6,10 +6,6 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-const getTotalBalanceByGender = (users, gender) => {
-    const result = users.filter(user => user.gender).map(user => user.balance += user.balance);
-    return result;
-}
 
 const getTotalBalanceByGender = (users, gender) => {
     return users
@@ -17,15 +13,6 @@ const getTotalBalanceByGender = (users, gender) => {
         .reduce((total, user) => total + user.balance, 0);
 }
 
-const getTotalBalanceByGender = (users, gender) => {
-  let totalBalance = 0;
-  for (let user of users) {
-    if (user.gender === gender) {
-      totalBalance += user.balance;
-    }
-  }
-  return totalBalance;
-}
 
 
 const clients = [
